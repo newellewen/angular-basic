@@ -1,0 +1,19 @@
+.navbar-link {
+    color: white;
+	padding-left: 50px;
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+$header-h: 50px;
+$header-background: #455f79;
+
+header {
+	background-color: $header-background;
+	height: $header-h;
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	z-index: 4;
+	box-shadow: 0 1px 20px 0 rgba(0,0,0,.5);
+}

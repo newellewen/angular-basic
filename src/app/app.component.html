@@ -1,2 +1,13 @@
-<navbar></navbar>
-<router-outlet></router-outlet>
+<header>
+    <a  id="menu-trigger" (click)="triggerNavbar()">
+        <span class="menu-stripe stripe-top"></span>
+    </a>
+</header>
+
+<div id="side" class="side-menu-container" [ngClass]="{'slide-in' : navbarTriggered}">
+    <navbar></navbar>
+</div>
+
+<div id="main" class="page-content" [ngClass]="{'slide-content' : navbarTriggered}">
+    <router-outlet></router-outlet>
+</div>
